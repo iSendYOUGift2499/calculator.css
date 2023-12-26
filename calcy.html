@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  
+    
+        <input id="calc" type="text" name="ans" placeholder="enter the value"/><br><br>
+        <!-- <input type="button" value="1" onclick="show (`1`)"> -->
+        
+        <button onclick="eraseDigit()">Click me</button><br><br>
+
+    <script>
+        let value1 = document.getElementById("calc").value;
+        console.log(value1)
+    
+    function eraseDigit(){
+        let value1 = document.getElementById("calc").value
+     console.log(typeof(value1));
+    console.log(value1)
+    /* console.log(value1) */
+    value1 = value1.slice(0,-1);
+    console.log("After"+value1)  
+}
+    
+        
+    </script>
+</body>
+</html>
